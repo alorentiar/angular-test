@@ -13,19 +13,19 @@ export class CartComponent implements OnInit {
 
   // checkoutForm = this.cartService.getItems();
 
-  checkoutForm = this.formBuilder.group({
-    name: '',
-    address: '',
-  });
+  // checkoutForm = this.formBuilder.group({
+  //   name: '',
+  //   address: '',
+  // });
 
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder
   ) {}
 
-  onSubmit(): void {
-    this.items = this.cartService.clearCart();
-  }
+  // onSubmit(): void {
+  //   this.items = this.cartService.clearCart();
+  // }
 
   ngOnInit(): void {}
 }
